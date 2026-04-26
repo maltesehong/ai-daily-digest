@@ -47,7 +47,7 @@ class NewsCollector:
             feed = feedparser.parse(source['url'])
             count = 0
 
-            for entry in feed.entries[:10]:  # 每个源最多5条
+            for entry in feed.entries[:10]:  # 每个源最多10条
                 # 检查是否包含关键词
                 if self._has_keywords(entry, source.get('keywords', [])):
                     item = {
@@ -96,7 +96,7 @@ class NewsCollector:
                 'language': 'en',
                 'sortBy': 'publishedAt',
                 'apiKey': api_key,
-                'pageSize': 10
+                'pageSize': 20
             }
 
             response = requests.get(url, params=params, headers=headers, timeout=self.timeout)
@@ -124,14 +124,11 @@ class NewsCollector:
     def _collect_from_web(self, source: Dict):
         """从网页采集新闻（简单实现）"""
         logger.info(f"  ℹ️ 网页采集需要自定义爬虫逻辑")
-        # 这部分可以根据具体网站实现，这里仅作示意
 
     def _has_keywords(self, entry: Dict, keywords: List[str]) -> bool:
         """检查条目是否包含关键词"""
         if not keywords:
-        return True
+            return True
 
         text = (entry.get('title', '') + ' ' + entry.get('summary', '')).lower()
-        # 改为：只要标题包含任何关键词就接受
-        # 这样会增加采集数量但可能有无关内容
-        return any(kw.lower() in text for kw in keywords) or 'ai' in text.lower()  
+        return any(kw.lower() in text for kw in keywords)
