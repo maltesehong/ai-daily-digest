@@ -129,7 +129,9 @@ class NewsCollector:
     def _has_keywords(self, entry: Dict, keywords: List[str]) -> bool:
         """检查条目是否包含关键词"""
         if not keywords:
-            return True
+        return True
 
         text = (entry.get('title', '') + ' ' + entry.get('summary', '')).lower()
-        return any(kw.lower() in text for kw in keywords)
+        # 改为：只要标题包含任何关键词就接受
+        # 这样会增加采集数量但可能有无关内容
+        return any(kw.lower() in text for kw in keywords) or 'ai' in text.lower()  
