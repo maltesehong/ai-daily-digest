@@ -38,7 +38,7 @@ def load_config():
 
     return {
         'sources': sources,
-        'categories': categories
+        'categories': categories['categories']
     }
 
 
