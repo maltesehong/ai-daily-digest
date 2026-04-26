@@ -65,7 +65,7 @@ class EmailSender:
                 <h3 style="color: #4F46E5; margin-top: 0;">{category_name}</h3>
             """
 
-            for idx, item in enumerate(items[:5], 1):  # 每个分类最多显示5条
+            for idx, item in enumerate(items[:10], 1):  # 每个分类最多显示5条
                 items_html += f"""
                 <div style="margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px solid #E5E7EB;">
                     <p style="margin: 0 0 5px 0;">
