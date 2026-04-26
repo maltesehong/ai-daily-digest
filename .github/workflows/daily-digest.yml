@@ -34,7 +34,7 @@ jobs:
           RECIPIENT_EMAIL: ${{ secrets.RECIPIENT_EMAIL }}
           NEWSAPI_KEY: ${{ secrets.NEWSAPI_KEY }}
         run: |
-          cd src
+          python -u main.py
           python -u ../main.py
 
       - name: 失败通知
