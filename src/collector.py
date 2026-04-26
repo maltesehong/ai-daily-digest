@@ -47,7 +47,7 @@ class NewsCollector:
             feed = feedparser.parse(source['url'])
             count = 0
 
-            for entry in feed.entries[:5]:  # 每个源最多5条
+            for entry in feed.entries[:10]:  # 每个源最多5条
                 # 检查是否包含关键词
                 if self._has_keywords(entry, source.get('keywords', [])):
                     item = {
@@ -104,7 +104,7 @@ class NewsCollector:
             count = 0
 
             if data.get('status') == 'ok':
-                for article in data.get('articles', [])[:10]:
+                for article in data.get('articles', [])[:20]:
                     item = {
                         'title': article.get('title', 'No title'),
                         'link': article.get('url', ''),
