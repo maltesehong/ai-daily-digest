@@ -35,6 +35,41 @@
       "url": "https://36kr.com/feed.xml",
       "keywords": ["AI", "人工智能", "大模型", "融资"]
     }
+    {
+      "name": "TechCrunch",
+      "url": "https://techcrunch.com/feed/",
+      "keywords": ["AI", "startup", "funding"]
+    },
+    {
+      "name": "The Verge",
+      "url": "https://www.theverge.com/ai/index.xml",
+      "keywords": ["AI", "tech", "artificial intelligence"]
+    },
+    {
+      "name": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/feed.xml",
+      "keywords": ["AI", "machine learning", "neural"]
+    },
+    {
+      "name": "Nature Machine Intelligence",
+      "url": "https://www.nature.com/articles?type=article&subject=machine-intelligence",
+      "keywords": ["AI", "learning", "intelligence"]
+    },
+    {
+      "name": "InfoQ",
+      "url": "https://www.infoq.com/feed",
+      "keywords": ["AI", "machine learning", "deep learning"]
+    },
+    {
+      "name": "DeepMind Blog",
+      "url": "https://deepmind.com/blog.rss",
+      "keywords": ["AI", "research", "model"]
+    },
+    {
+      "name": "OpenAI Announcements",
+      "url": "https://openai.com/feed.xml",
+      "keywords": ["GPT", "model", "API"]
+    }
   ],
   "api_sources": [
     {
