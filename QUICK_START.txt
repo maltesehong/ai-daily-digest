@@ -1,0 +1,149 @@
+================================
+🤖 AI Daily Digest - 快速开始
+================================
+
+⏱️ 预计时间：15 分钟
+
+════════════════════════════════════════════════════
+
+✅ 清单 1: GitHub 仓库设置（2分钟）
+
+1. 完成仓库创建（你现在应该在这一步）
+   - Repository name: ai-daily-digest
+   - Description: Daily AI industry news digest
+   - Public ✓
+   - Add README ✓
+   - .gitignore: Python ✓
+   - License: MIT ✓
+
+2. 点击 "Create repository" 按钮
+
+════════════════════════════════════════════════════
+
+✅ 清单 2: 上传项目文件（5分钟）
+
+创建以下目录和文件结构：
+
+ai-daily-digest/
+├── .github/
+│   └── workflows/
+│       └── daily-digest.yml
+├── src/
+│   ├── __init__.py
+│   ├── collector.py
+│   ├── processor.py
+│   └── sender.py
+├── config/
+│   ├── sources.json
+│   └── categories.json
+├── main.py
+├── requirements.txt
+├── .env.example
+└── README.md
+
+💡 方式1（推荐新手）：
+  - 在网页上点击 "Add file" → "Create new file"
+  - 输入文件名（含目录路径）
+  - 粘贴文件内容
+  - 点击 "Commit changes"
+
+💡 方式2（高级用户）：
+  - 用 git clone 克隆仓库
+  - 复制所有文件
+  - git add . && git commit && git push
+
+════════════════════════════════════════════════════
+
+✅ 清单 3: Gmail 配置（5分钟）
+
+1. 打开 https://myaccount.google.com/security
+2. 确保已启用 "两步验证"
+3. 找到 "应用专用密码"
+4. 选择：Mail + Windows PC
+5. 点击 "生成" 获得 16 字符密码
+   格式: xxxx xxxx xxxx xxxx
+6. 复制这个密码（不是你的Gmail密码！）
+
+⚠️ 非常重要：
+  - 必须用 "应用密码"，不能用账户密码
+  - 如果没有 "应用专用密码" 选项，说明账户需要更多安全设置
+
+════════════════════════════════════════════════════
+
+✅ 清单 4: GitHub Secrets 配置（3分钟）
+
+1. 进入仓库 Settings
+2. 左侧菜单 → Secrets and variables → Actions
+3. 点击 "New repository secret"，添加以下4个：
+
+   Name: GMAIL_SENDER
+   Value: your-email@gmail.com
+
+   Name: GMAIL_PASSWORD
+   Value: xxxx xxxx xxxx xxxx (刚才复制的密码)
+
+   Name: RECIPIENT_EMAIL
+   Value: your-email@gmail.com (收件邮箱)
+
+   Name: NEWSAPI_KEY (可选)
+   Value: your_newsapi_key_here
+
+════════════════════════════════════════════════════
+
+✅ 清单 5: 验证系统（2分钟）
+
+1. 进入仓库的 Actions 标签页
+2. 点击左侧 "AI Daily Digest"
+3. 点击 "Run workflow" → "Run workflow"
+4. 等待运行完成
+5. 检查邮箱 - 应该收到测试邮件！
+
+════════════════════════════════════════════════════
+
+✨ 完成！
+
+从现在开始：
+⏰ 每天早上9点自动推送
+📧 采集、分类、整理AI新闻
+📊 通过精美HTML邮件发送
+
+系统信息：
+- 运行方式: GitHub Actions（完全免费）
+- 推送时间: 每天 09:00 AM (UTC+8)
+- 分类数量: 9大类（为AI产品经理优化）
+- 邮件格式: HTML（可直接在邮箱中查看）
+
+════════════════════════════════════════════════════
+
+🔧 如需修改
+
+修改推送时间:
+  编辑 .github/workflows/daily-digest.yml
+  修改 cron: '0 1 * * *' 这一行
+
+调整分类规则:
+  编辑 config/categories.json
+  修改关键词列表
+
+添加新信息源:
+  编辑 config/sources.json
+  添加新RSS源、API源等
+
+════════════════════════════════════════════════════
+
+❓ 遇到问题？
+
+查看详细文档:
+  - GITHUB_SETUP_GUIDE.md (完整步骤)
+  - README.md (功能说明和文档)
+
+检查运行日志:
+  - Actions → 运行记录 → 查看日志输出
+
+常见问题:
+  - 收不到邮件 → 检查 GMAIL_PASSWORD 是否正确
+  - 运行失败 → 查看 Actions 日志找出具体错误
+
+════════════════════════════════════════════════════
+
+祝你使用愉快！有问题欢迎提 Issue 或修改配置！ 🚀

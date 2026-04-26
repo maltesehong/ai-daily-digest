@@ -1,0 +1,64 @@
+{
+  "rss_feeds": [
+    {
+      "name": "Product Hunt",
+      "url": "https://www.producthunt.com/feed.xml",
+      "keywords": ["AI", "GPT", "LLM", "machine learning"]
+    },
+    {
+      "name": "Hacker News",
+      "url": "https://news.ycombinator.com/rss",
+      "keywords": ["AI", "artificial intelligence", "GPT", "LLM", "neural"]
+    },
+    {
+      "name": "Arxiv AI",
+      "url": "http://arxiv.org/rss/cs.AI",
+      "keywords": ["learning", "model", "training"]
+    },
+    {
+      "name": "GitHub Trending",
+      "url": "https://github.com/trending/python?since=daily",
+      "keywords": ["AI", "LLM", "GPT", "model"]
+    },
+    {
+      "name": "量子位",
+      "url": "https://www.qbitai.com/feed",
+      "keywords": ["AI", "大模型", "GPT", "LLM"]
+    },
+    {
+      "name": "机器之心",
+      "url": "https://www.jiqizhixin.com/feed",
+      "keywords": ["AI", "大模型", "深度学习", "神经网络"]
+    },
+    {
+      "name": "36氪",
+      "url": "https://36kr.com/feed.xml",
+      "keywords": ["AI", "人工智能", "大模型", "融资"]
+    }
+  ],
+  "api_sources": [
+    {
+      "name": "NewsAPI",
+      "url": "https://newsapi.org/v2/everything",
+      "api_key": "YOUR_NEWSAPI_KEY",
+      "keywords": ["AI", "artificial intelligence", "GPT", "LLM"]
+    }
+  ],
+  "web_sources": [
+    {
+      "name": "OpenAI Blog",
+      "url": "https://openai.com/blog",
+      "keywords": ["GPT", "ChatGPT", "model"]
+    },
+    {
+      "name": "Google AI Blog",
+      "url": "https://ai.google/blog",
+      "keywords": ["AI", "model", "research"]
+    },
+    {
+      "name": "Anthropic News",
+      "url": "https://www.anthropic.com/news",
+      "keywords": ["Claude", "AI safety"]
+    }
+  ]
+}
