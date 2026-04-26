@@ -8,12 +8,15 @@ from datetime import datetime
 
 logger = logging.getLogger(__name__)
 
-
 class ContentProcessor:
     """内容处理器"""
 
     def __init__(self, categories_config: Dict):
-        self.categories = categories_config
+        # 如果 categories_config 中包含 'categories' 键，则提取它
+        if isinstance(categories_config, dict) and 'categories' in categories_config:
+            self.categories = categories_config['categories']
+        else:
+            self.categories = categories_config
         self.processed_items = {}
 
     def process_news(self, news_items: List[Dict]) -> Dict:
