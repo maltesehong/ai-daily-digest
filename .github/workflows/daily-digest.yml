@@ -35,7 +35,6 @@ jobs:
           NEWSAPI_KEY: ${{ secrets.NEWSAPI_KEY }}
         run: |
           python -u main.py
-          python -u ../main.py
 
       - name: 失败通知
         if: failure()
