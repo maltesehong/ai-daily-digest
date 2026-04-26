@@ -1,0 +1,113 @@
+{
+  "_comment": "AI产品经理专用的大模型分类体系",
+  "categories": [
+    {
+      "id": "model_breakthrough",
+      "name": "基础模型突破",
+      "emoji": "🔬",
+      "description": "新模型发布、SOTA刷新、能力提升",
+      "keywords": [
+        "GPT-5", "GPT-4", "Claude", "Gemini", "Llama", "Mixtral",
+        "new model", "release", "breakthrough", "SOTA",
+        "大模型", "新模型", "发布", "突破",
+        "multimodal", "vision", "能力提升", "性能突破"
+      ]
+    },
+    {
+      "id": "commercialization",
+      "name": "商业化进展",
+      "emoji": "💼",
+      "description": "API开放、定价策略、商业模式创新",
+      "keywords": [
+        "API", "pricing", "subscription", "enterprise", "B2B",
+        "商业化", "定价", "收费", "付费方案",
+        "成本", "效率", "ROI", "商业模式",
+        "marketplace", "plugin", "integration"
+      ]
+    },
+    {
+      "id": "product_application",
+      "name": "产品应用",
+      "emoji": "🚀",
+      "description": "垂直应用、行业解决方案、C端/B端产品",
+      "keywords": [
+        "application", "product", "use case", "solution",
+        "应用", "产品", "工具", "方案",
+        "vertical", "industry", "B2C", "B2B",
+        "copilot", "assistant", "automation"
+      ]
+    },
+    {
+      "id": "financing",
+      "name": "融资并购",
+      "emoji": "💰",
+      "description": "融资轮次、估值、并购、投资动向",
+      "keywords": [
+        "funding", "investment", "Series", "raise", "valuation",
+        "融资", "融资轮", "融资额", "估值",
+        "并购", "收购", "IPO", "股权",
+        "venture capital", "VC", "angel"
+      ]
+    },
+    {
+      "id": "policy_regulation",
+      "name": "政策监管",
+      "emoji": "⚖️",
+      "description": "法规变化、安全要求、合规指南",
+      "keywords": [
+        "regulation", "policy", "compliance", "safety", "governance",
+        "政策", "监管", "法规", "合规",
+        "安全", "隐私", "伦理", "责任",
+        "EU AI Act", "executive order"
+      ]
+    },
+    {
+      "id": "tech_innovation",
+      "name": "技术创新",
+      "emoji": "🔧",
+      "description": "微调、量化、开源模型、推理优化",
+      "keywords": [
+        "fine-tune", "quantization", "distillation", "optimization",
+        "微调", "量化", "蒸馏", "优化",
+        "开源", "推理", "推理速度", "延迟",
+        "RAG", "retrieval", "inference", "performance"
+      ]
+    },
+    {
+      "id": "enterprise_strategy",
+      "name": "企业战略",
+      "emoji": "🏢",
+      "description": "大厂组织调整、产品路线、战略转向",
+      "keywords": [
+        "strategy", "roadmap", "organization", "team",
+        "战略", "路线图", "组织", "团队",
+        "大厂", "OpenAI", "Google", "Meta", "Microsoft",
+        "Anthropic", "Amazon", "Apple", "partnership"
+      ]
+    },
+    {
+      "id": "market_competition",
+      "name": "市场竞争",
+      "emoji": "📊",
+      "description": "竞品对标、生态布局、市场份额",
+      "keywords": [
+        "compete", "competition", "market share", "ecosystem",
+        "竞争", "竞品", "对标", "市场",
+        "生态", "伙伴", "联合", "整合",
+        "leader", "advantage", "barrier"
+      ]
+    },
+    {
+      "id": "developer_tools",
+      "name": "开发者工具",
+      "emoji": "🛠️",
+      "description": "框架、库、开发工具、插件生态",
+      "keywords": [
+        "framework", "library", "tool", "SDK", "API",
+        "框架", "库", "工具", "SDK",
+        "开发", "编程", "代码", "开源",
+        "PyTorch", "TensorFlow", "LangChain", "Hugging Face"
+      ]
+    }
+  ]
+}
